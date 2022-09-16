@@ -167,7 +167,7 @@ def objective_wrapper(trial):
       result = optimize_agent(trial, seed=seed_value)
       results[seed_value] = result    
     # Aggregate results and determine the score.
-    return [np.mean([values for values in results.values()][i]) for i in range(len(results))]
+    return [np.mean([values[i] for values in results.values()]) for i in range(len(results[0]))]
     
 if __name__ == "__main__":
 
