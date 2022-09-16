@@ -52,7 +52,7 @@ The code runs as is. A single-model multi-objective optimization performed in [e
 
 Once the training and evaluation are done, the files with "visualization" in the name will plot analysis acording to the data from the created "evaluation/" folder. The files with "report" in the name will look at the .db file created by optuna once the study is over, to generate .tex and .csv table reports and plot information from the hyperparameters in the optuna.create_study().
 
-[Back To The Top](#smartgrid_DRL)
+[Back to the top](#smartgrid_DRL)
 
 <!---
 ___
