@@ -18,5 +18,5 @@ natsort
 kaleido
 sklearn
 
-# latex
+#latex
 python3-graphviz python3-tk texlive-latex-extra texlive-fonts-recommended dvipng cm-super
