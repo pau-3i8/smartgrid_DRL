@@ -26,6 +26,7 @@ TIMESTEPS = 100000
 N_EVAL_EPISODES = 24*365
 N_SEEDS = 5
 N_TRIALS = 1
+THRESHOLD = 0.05  # if error > 0.5% PRUNE the trial and dont explore the seeds
 
 #if it is not used a distributed load, the following file can be a global dictionary.
 HYPARAMS_FILE = 'suggested_params.csv'
@@ -135,8 +136,8 @@ def optimize_agent(trial, seed):
         
         #metrics are saved in a file
         reward, v_viol, i_viol, losses, error = eval_model(model, env, N_EVAL_EPISODES)
-        # if error > 0.5% prune the trial and dont explore the seeds
-        if error > 0.5:
+        
+        if error > THRESHOLD:
             #remove the evaluation file for consistency.
             for s in range(N_SEEDS): #si peta en un seed posterior al primer
                 path = os.path.join('evaluation', f"{trial.number}_{s}.csv")
