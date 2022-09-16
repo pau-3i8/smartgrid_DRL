@@ -1,0 +1,72 @@
+\begin{longtable}{ccccccccccc}
+\caption{A2C hyperparameters optimization results.}
+\label{tab:A2C_hyperparam}\\
+\toprule
+\multicolumn{1}{c}{Trial} & \multicolumn{1}{c}{Reward} & \multicolumn{1}{c}{Duration [sec]} & \multicolumn{7}{c}{Hyperparameters} &    State \\
+                       {} &       \multicolumn{1}{c}{} &               \multicolumn{1}{c}{} &  activation\_fn & gae\_lambda &  gamma & learning\_rate & max\_grad\_norm & n\_steps & net\_arch &       {} \\
+\midrule
+\endfirsthead
+\caption[]{A2C hyperparameters optimization results.} \\
+\toprule
+\multicolumn{1}{c}{Trial} & \multicolumn{1}{c}{Reward} & \multicolumn{1}{c}{Duration [sec]} & \multicolumn{7}{c}{Hyperparameters} &    State \\
+                       {} &       \multicolumn{1}{c}{} &               \multicolumn{1}{c}{} &  activation\_fn & gae\_lambda &  gamma & learning\_rate & max\_grad\_norm & n\_steps & net\_arch &       {} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{11}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+                        0 &                 117.357402 &                        25070.12407 &     leaky\_relu &        0.92 & 0.9990 &       0.001909 &             0.8 &     2048 &       big & COMPLETE \\
+                        1 &                 -60.420767 &                       26126.399079 &            relu &        0.95 & 0.9950 &       0.615811 &             0.8 &       16 &     small & COMPLETE \\
+                        2 &                 -86.772806 &                       26561.564492 &             elu &        0.80 & 0.9900 &       0.015923 &             2.0 &     1024 &     small & COMPLETE \\
+                        3 &                -218.518128 &                        25171.32712 &             elu &        0.95 & 0.9000 &       0.326716 &             0.9 &      256 &     small & COMPLETE \\
+                        4 &                  79.052052 &                       31463.814916 &     leaky\_relu &        0.90 & 0.9999 &       0.004060 &             0.8 &      512 &    medium & COMPLETE \\
+                        5 &                 -45.739587 &                       25056.415335 &            tanh &        0.80 & 0.9999 &       0.031566 &             0.9 &       64 &       big & COMPLETE \\
+                        6 &                 102.581652 &                       30380.329972 &     leaky\_relu &        0.80 & 0.9900 &       0.000190 &             1.0 &        8 &       big & COMPLETE \\
+                        7 &                 412.881214 &                       24851.298964 &            tanh &        0.95 & 0.9800 &       0.000728 &             1.0 &      128 &       big & COMPLETE \\
+                        8 &                 499.145838 &                        24593.16068 &            tanh &        0.92 & 0.9500 &       0.000350 &             0.3 &     1024 &    medium & COMPLETE \\
+                        9 &                -209.951212 &                       29465.095912 &             elu &        0.98 & 0.9500 &       0.765254 &             0.7 &       32 &    medium & COMPLETE \\
+                       10 &                -114.094434 &                       24599.485063 &            relu &        0.98 & 0.9999 &       0.000672 &             2.0 &      512 &    medium & COMPLETE \\
+                       11 &                -218.085991 &                       28309.352386 &            tanh &        0.80 & 0.9500 &       0.041658 &             5.0 &      256 &     small & COMPLETE \\
+                       12 &                 475.666675 &                       27107.016416 &            tanh &        0.90 & 0.9900 &       0.000050 &             0.6 &        8 &    medium & COMPLETE \\
+                       13 &                 507.305120 &                        26858.98266 &            tanh &        0.80 & 0.9500 &       0.000199 &             0.3 &        8 &     small & COMPLETE \\
+                       14 &                 244.376194 &                       29443.176816 &            tanh &        0.95 & 0.9500 &       0.000020 &             0.3 &       64 &       big & COMPLETE \\
+                       15 &                -188.689585 &                       31259.462641 &     leaky\_relu &        0.92 & 0.9999 &       0.003747 &             2.0 &       32 &     small & COMPLETE \\
+                       16 &                  21.562306 &                       26021.567528 &             elu &        0.98 & 0.9800 &       0.005096 &             0.6 &     2048 &    medium & COMPLETE \\
+                       17 &                 382.207950 &                       24920.871379 &            tanh &        0.99 & 0.9500 &       0.000201 &             0.3 &      256 &    medium & COMPLETE \\
+                       18 &                 360.950380 &                       27548.367362 &            tanh &        0.90 & 0.9900 &       0.000295 &             0.6 &        8 &    medium & COMPLETE \\
+                       19 &                  81.273514 &                       26469.064389 &            tanh &        0.80 & 0.9500 &       0.002489 &             0.3 &        8 &     small & COMPLETE \\
+                       20 &                 203.907685 &                       30647.596551 &            tanh &        0.95 & 0.9500 &       0.000027 &             0.3 &     1024 &    medium & COMPLETE \\
+                       21 &                 -57.934361 &                        31364.63251 &            tanh &        0.80 & 0.9500 &       0.001727 &             0.3 &        8 &    medium & COMPLETE \\
+                       22 &                 302.996485 &                       29078.234878 &             elu &        0.80 & 0.9500 &       0.000030 &             0.3 &        8 &     small & COMPLETE \\
+                       23 &                 400.354680 &                       30916.604118 &            tanh &        0.92 & 0.9800 &       0.002667 &             0.8 &     1024 &    medium & COMPLETE \\
+                       24 &                 227.932617 &                       25754.550482 &            tanh &        0.80 & 0.9800 &       0.000016 &             0.3 &        8 &     small & COMPLETE \\
+                       25 &                 195.064718 &                       26293.597635 &            tanh &        0.92 & 0.9000 &       0.005233 &             0.3 &     1024 &    medium & COMPLETE \\
+                       26 &                 137.457700 &                       25877.396058 &             elu &        0.80 & 0.9999 &       0.000156 &             0.3 &      128 &    medium & COMPLETE \\
+                       27 &                 419.373350 &                       26870.284942 &     leaky\_relu &        0.92 & 0.9800 &       0.000023 &             2.0 &     1024 &    medium & COMPLETE \\
+                       28 &                 350.787732 &                       30009.482523 &            tanh &        0.92 & 0.9500 &       0.002499 &             0.5 &     2048 &    medium & COMPLETE \\
+                       29 &                 167.693633 &                       30668.049088 &             elu &        0.90 & 0.9990 &       0.000030 &             0.9 &        8 &    medium & COMPLETE \\
+                       30 &                 406.582422 &                       24319.246062 &            tanh &        0.92 & 0.9990 &       0.001705 &             1.0 &     1024 &    medium & COMPLETE \\
+                       31 &                 100.625375 &                       30555.825765 &     leaky\_relu &        0.92 & 0.9990 &       0.000245 &             0.3 &     1024 &    medium & COMPLETE \\
+                       32 &                 317.698711 &                        26226.03247 &            tanh &        0.90 & 0.9000 &       0.000010 &             0.9 &        8 &    medium & COMPLETE \\
+                       33 &                 233.542469 &                        26434.91858 &            tanh &        0.99 & 0.9000 &       0.000039 &             0.6 &      512 &    medium & COMPLETE \\
+                       34 &                 324.700254 &                       23845.762583 &     leaky\_relu &        0.90 & 0.9900 &       0.000061 &             0.9 &      256 &    medium & COMPLETE \\
+                       35 &                 180.034788 &                       28071.625176 &            tanh &        0.99 & 0.9900 &       0.000016 &             0.7 &     2048 &    medium & COMPLETE \\
+                       36 &                 243.454294 &                       24249.706437 &            relu &        0.92 & 0.9500 &       0.000116 &             0.3 &       32 &    medium & COMPLETE \\
+                       37 &                 197.490556 &                        28872.88257 &            tanh &        0.92 & 0.9500 &       0.000046 &             0.8 &      512 &     small & COMPLETE \\
+                       38 &                 259.430948 &                       30028.373554 &     leaky\_relu &        0.92 & 0.9999 &       0.000106 &             0.3 &     1024 &       big & COMPLETE \\
+                       39 &                 464.978803 &                       30611.883735 &             elu &        0.92 & 0.9800 &       0.000017 &             2.0 &       32 &    medium & COMPLETE \\
+                       40 &                 472.956450 &                       24399.238381 &     leaky\_relu &        0.80 & 0.9900 &       0.000019 &             2.0 &     1024 &    medium & COMPLETE \\
+                       41 &                 198.044926 &                       24300.300995 &     leaky\_relu &        0.90 & 0.9800 &       0.000167 &             2.0 &     1024 &    medium & COMPLETE \\
+                       42 &                 365.325439 &                       24126.530164 &            relu &        0.90 & 0.9800 &       0.000064 &             2.0 &     1024 &    medium & COMPLETE \\
+                       43 &                  80.277574 &                       26799.179889 &     leaky\_relu &        0.92 & 0.9900 &       0.000187 &             2.0 &       64 &    medium & COMPLETE \\
+                       44 &                 356.522790 &                       24393.544857 &             elu &        0.99 & 0.9800 &       0.000028 &             2.0 &     1024 &       big & COMPLETE \\
+                       45 &                  85.869276 &                       27909.712423 &            relu &        0.92 & 0.9800 &       0.000220 &             2.0 &     1024 &    medium & COMPLETE \\
+                       46 &                 402.021378 &                       27882.648401 &     leaky\_relu &        0.92 & 0.9800 &       0.000014 &             0.5 &       16 &    medium & COMPLETE \\
+                       47 &                 269.757635 &                       25735.351125 &            tanh &        0.90 & 0.9900 &       0.000013 &             1.0 &       16 &    medium & COMPLETE \\
+                       48 &                 477.584825 &                       25601.379075 &             elu &        0.80 & 0.9900 &       0.000013 &             2.0 &     1024 &    medium & COMPLETE \\
+                       49 &                 245.072752 &                       28360.915739 &            tanh &        0.80 & 0.9900 &       0.000032 &             2.0 &     1024 &    medium & COMPLETE \\
+\end{longtable}
