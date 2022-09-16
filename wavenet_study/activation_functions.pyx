@@ -40,7 +40,7 @@ cdef inline double quadratic(double x) nogil:
     return 0
 
 @cython.profile(False)
-cdef inline double bicubic(double x) nogil:
+cdef inline double cubic(double x) nogil:
     if 0 <= x <= 4:
         if 0 <= x <= 1: return 1/6*x*x*x
         elif 1 < x <= 2: return -1/2*x*x*x+2*x*x-2*x+2/3
@@ -53,8 +53,8 @@ cdef inline double bicubic(double x) nogil:
 def phi(unicode name, double x, size_t n, size_t n_sf):
     if name == 'quadratic':
         return quadratic(sup(x, n, 3, n_sf))
-    elif name == 'bicubic':
-        return bicubic(sup(x, n, 4, n_sf))
+    elif name == 'cubic':
+        return cubic(sup(x, n, 4, n_sf))
     elif name == 'hat':
         return hat(sup(x, n, 2, n_sf))
     elif name == 'haar':
@@ -65,8 +65,8 @@ def phi(unicode name, double x, size_t n, size_t n_sf):
 def psi(unicode name, double x, size_t n, size_t n_sf):
     if name == 'quadratic':
         return 1/4*quadratic(2*sup(x, n, 3, n_sf)) - 3/4*quadratic(2*sup(x, n, 3, n_sf)-1) + 3/4*quadratic(2*sup(x, n, 3, n_sf)-2) - 1/4*quadratic(2*sup(x, n, 3, n_sf)-3)
-    elif name == 'bicubic':
-        return 1/8*bicubic(2*sup(x, n, 4, n_sf))-1/2*bicubic(2*sup(x, n, 4, n_sf)-1)+3/4*bicubic(2*sup(x, n, 4, n_sf)-2)-1/2*bicubic(2*sup(x, n, 4, n_sf)-3)+1/8*bicubic(2*sup(x, n, 4, n_sf)-4)
+    elif name == 'cubic':
+        return 1/8*cubic(2*sup(x, n, 4, n_sf))-1/2*cubic(2*sup(x, n, 4, n_sf)-1)+3/4*cubic(2*sup(x, n, 4, n_sf)-2)-1/2*cubic(2*sup(x, n, 4, n_sf)-3)+1/8*cubic(2*sup(x, n, 4, n_sf)-4)
     elif name == 'hat':
         return 1/2*hat(2*sup(x, n, 2, n_sf))-hat(2*sup(x, n, 2, n_sf)-1)+1/2*hat(2*sup(x, n, 2, n_sf)-2)
     elif name == 'haar':

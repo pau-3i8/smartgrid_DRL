@@ -78,8 +78,8 @@ if __name__ == "__main__":
     y2 = np.zeros(1000)
     l = []
     for i in range(len(y1)):
-        y1[i] = phi('bicubic', xi[i], 0, 1)
-        y2[i] = psi('bicubic', xi[i], 0, 1)
+        y1[i] = phi('cubic', xi[i], 0, 1)
+        y2[i] = psi('cubic', xi[i], 0, 1)
     l.append(y1)
     l.append(y2)
     
@@ -87,8 +87,8 @@ if __name__ == "__main__":
         y1 = np.zeros(1000)
         y2 = np.zeros(1000)
         for i in range(len(y1)):
-            y1[i] = phi('bicubic', xi[i], j, 3)
-            y2[i] = psi('bicubic', xi[i], j, 3)
+            y1[i] = phi('cubic', xi[i], j, 3)
+            y2[i] = psi('cubic', xi[i], j, 3)
         l.append(y1)
         l.append(y2)
     graphic(l, xi)

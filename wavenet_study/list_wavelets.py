@@ -35,8 +35,8 @@ if __name__ == "__main__":
         psi_hat[i] = psi('hat', x[i], 0, 1)
         phi_quadratic[i] = phi('quadratic', x[i], 0, 1)
         psi_quadratic[i] = psi('quadratic', x[i], 0, 1)
-        phi_cubic[i] = phi('bicubic', x[i], 0, 1)
-        psi_cubic[i] = psi('bicubic', x[i], 0, 1)
+        phi_cubic[i] = phi('cubic', x[i], 0, 1)
+        psi_cubic[i] = psi('cubic', x[i], 0, 1)
 
     plt.subplot(421)
     plt.title('Haar scale function')
