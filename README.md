@@ -11,7 +11,6 @@ ___
 <!---
 - [Author Info](#author-info)
 -->
-[Back To The Top](#smartgrid_DRL)
 ___
 
 ## Description
@@ -21,8 +20,6 @@ The respository has been developed along side [this master thesis](https://githu
 It is used the [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) agents for the explored DRL algorithms, and the [Optuna](https://github.com/optuna/optuna) hyperparameter optimization framework.
 
 The repository provides scripts for training and evaluating the agents in a custom environment for the smart grid simulation, distributed hyperparameters tuning, writing report tables and plotting results. The environment is also integrated with the [Pandapower](https://github.com/e2nIEE/pandapower) power flow calculator.
-
-[Back To The Top](#smartgrid_DRL)
 ___
 
 ## Installation
@@ -41,15 +38,13 @@ The Python packages used are:
 - sklearn >= 0.0
 - stable-baselines3 >= 1.6.0
 - tensorboard >= 2.10.0
-- 
+
 # Plotting set-up
 
 Installing latex for plotting
     ```
     sudo apt-get install python3-graphviz python3-tk texlive-latex-base texlive-latex-extra texlive-fonts-recommended dvipng cm-super
     ```
-
-[Back To The Top](#smartgrid_DRL)
 ___
 ## Documentation
 
