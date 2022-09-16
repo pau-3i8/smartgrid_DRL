@@ -62,7 +62,6 @@ def convert_to_latex(df, file_name):
         ]
     ]
     df.columns = header
-    print(df)
     with open(os.path.join(os.getcwd(), file_name+'.tex'), 'w') as file:
         file.write(
             df
