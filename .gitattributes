@@ -1,2 +1,8 @@
-*.tex linguist-detectable=false
-*.csv linguist-detectable=false
+models_study/extended_/model_report_results/*.tex linguist-detectable=false
+#models_study/extended_/evaluation/*.csv linguist-detectable=false
+
+models_study/study_analysis/model_report_results/*.tex linguist-detectable=false
+#models_study/study_analysis/evaluation/*.csv linguist-detectable=false
+
+
+intrinsic_param_study/*.tex linguist-detectable=false
