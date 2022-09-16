@@ -50,7 +50,7 @@ ___
 
 The code runs as is. A single-model multi-objective optimization performed in [env_tuning](https://github.com/pau-3i8/smartgrid_DRL/tree/main/intrinsic_param_study/env_tuning.py) is distributed with the [env_parallelization](https://github.com/pau-3i8/smartgrid_DRL/tree/main/intrinsic_param_study/env_parallelization.py) program. The same idea is reproduced for a multi-model single-objective optimization performed with the analogous [models_tuning](https://github.com/pau-3i8/smartgrid_DRL/tree/main/models_study/models_tuning.py) and [models_parallelization](https://github.com/pau-3i8/smartgrid_DRL/tree/main/models_study/models_parallelization.py) programs.
 
-Once the training and evaluation are done, the files with "visualization" in the name will plot analysis acording to the data from the created 'evaluation/' folder. The files with "report" in the name will look at the .db file created by optuna once the study is over, to generate .tex and .csv table reports and plot information from the hyperparameters in the optuna.create_study().
+Once the training and evaluation are done, the files with "visualization" in the name will plot analysis acording to the data from the created "evaluation/" folder. The files with "report" in the name will look at the .db file created by optuna once the study is over, to generate .tex and .csv table reports and plot information from the hyperparameters in the optuna.create_study().
 
 [Back To The Top](#smartgrid_DRL)
 
