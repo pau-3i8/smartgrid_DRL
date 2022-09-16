@@ -3,6 +3,7 @@
 Deep reinforcement learning tool for demand response in smart grids with high penetration of renewable energy sources.
 
 
+(edition in progress..)
 
 optuna
 stable-baselines3
