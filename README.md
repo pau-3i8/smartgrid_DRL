@@ -15,7 +15,7 @@ ___
 
 ## Description
 
-The respository has been developed along side [this master's thesis](https://upcommons.upc.edu/handle/2117/374273), which provides the mathematical calculations, data used and analysis results present in this repository. The original work remains practically intact, despite some barely perceptible imprecisions, which has been [updated.](https://github.com/pau-3i8/smartgrid_DRL/tree/main/master_thesis). It is reproducibe, even in a distributed environment, being able to obtain the same result present in the thesis, as long as the simulations run in a 40 CPU machine. The reproducibility depends on the number of cores used for the distributed simulation, hence the CPU number is used as a seed.
+The respository has been developed along side [this master's thesis](https://upcommons.upc.edu/handle/2117/374273), which provides the mathematical calculations, data used and analysis results present in this repository. The original work remains practically intact, despite some barely perceptible imprecisions, which has been [updated](https://github.com/pau-3i8/smartgrid_DRL/tree/main/master_thesis). It is reproducibe, even in a distributed environment, being able to obtain the same result present in the thesis, as long as the simulations run in a 40 CPU machine. The reproducibility depends on the number of cores used for the distributed simulation, hence the CPU number is used as a seed.
 
 It is used the [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) agents for the explored DRL algorithms, and the [Optuna](https://github.com/optuna/optuna) hyperparameter optimization framework.
 
