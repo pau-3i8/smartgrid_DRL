@@ -8,9 +8,7 @@ ___
 - [Description](#description)
 - [Installation](#installation)
 - [Documentation](#documentation)
-<!---
-- [Author Info](#author-info)
--->
+- [Author](#author)
 ___
 
 ## Description
@@ -46,19 +44,28 @@ Installing latex for plotting
 sudo apt-get install python3-graphviz python3-tk texlive-latex-base texlive-latex-extra texlive-fonts-recommended dvipng cm-super
 ```
 ___
+
 ## Documentation
 
 The code runs as is. A single-model multi-objective optimization performed in [env_tuning](https://github.com/pau-3i8/smartgrid_DRL/tree/main/intrinsic_param_study/env_tuning.py) is distributed with the [env_parallelization](https://github.com/pau-3i8/smartgrid_DRL/tree/main/intrinsic_param_study/env_parallelization.py) program. The same idea is reproduced for a multi-model single-objective optimization performed with the analogous [models_tuning](https://github.com/pau-3i8/smartgrid_DRL/tree/main/models_study/models_tuning.py) and [models_parallelization](https://github.com/pau-3i8/smartgrid_DRL/tree/main/models_study/models_parallelization.py) programs.
 
 Once the training and evaluation are done, the files with "visualization" in the name will plot analysis acording to the data from the created "evaluation/" folder. The files with "report" in the name will look at the .db file created by optuna once the study is over, to generate .tex and .csv table reports and plot information from the hyperparameters in the optuna.create_study().
+___
+
+## Authors
+
+#### Code author
+
+- Pau Fisco - pau.fisco@upc.edu
+
+```
+@misc{Wavenet code,
+  title={Deep reinforcement learning tool for demand response in smart grids.},
+  author={Fisco, Pau},
+  journal={GitHub. Note: https://github.com/pau-3i8/smartgrid_DRL},
+  volume={1},
+  year={2022}
+}
+```
 
 [Back to the top](#smartgrid_DRL)
-
-<!---
-___
-## Authos Infor
-
-- LinkedIn - [Pau Fisco](https://www.linkedin.com/in/pau-fisco-compte/?locale=en_US)
-
-[Back To The Top](#smartgrid_DRL)
--->
