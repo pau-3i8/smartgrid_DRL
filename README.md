@@ -60,7 +60,8 @@ ___
 @misc{smartgrid_DRL code,
   title={Deep reinforcement learning tool for demand response in smart grids.},
   author={Fisco, Pau},
-  journal={GitHub. Note: https://github.com/pau-3i8/smartgrid_DRL},
+  howpublished = {GitHub},
+  note = {https://github.com/pau-3i8/smartgrid_DRL}
   volume={1},
   year={2022}
 }
