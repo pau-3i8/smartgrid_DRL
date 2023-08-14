@@ -1,4 +1,4 @@
-# smartgrid_DRL
+# Smartgrid DRL
 
 This repository is a deep reinforcement learning tool for demand response in smart grids, with high penetration of renewable energy sources.
 ___
