@@ -66,5 +66,3 @@ ___
   year={2022}
 }
 ```
-
-[Back to the top](#Smartgrid DRL)
