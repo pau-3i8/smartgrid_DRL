@@ -67,4 +67,4 @@ ___
 }
 ```
 
-[Back to the top](#smartgrid_DRL)
+[Back to the top](#Smartgrid DRL)
